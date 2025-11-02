@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UNPECA – Union pour la Promotion de l'Égalité des Chances, Aide et Action</title>
+  <meta name="description" content="UNPECA - Paix, cohésion sociale, santé communautaire et autonomisation au Mali." />
+  <style>
+    :root{
+      --green:#0b7a49; --dark:#0b3b2a; --accent:#173e6b; --muted:#6b6b6b;
+      --bg:#f7fbf8; --card:#ffffff; --radius:12px;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif;color:#152d2b;background:var(--bg);-webkit-font-smoothing:antialiased;}
+    header{background:linear-gradient(90deg,var(--green),var(--accent));color:#fff;padding:22px 14px;position:sticky;top:0;z-index:50}
+    .wrap{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand h1{margin:0;font-size:20px;letter-spacing:0.6px}
+    .brand p{margin:2px 0 0;font-size:13px;opacity:0.95}
+    nav{display:flex;gap:10px;align-items:center}
+    nav a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:8px;font-size:14px;opacity:0.95}
+    .langbtn{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.08);padding:6px 10px;border-radius:8px;cursor:pointer}
+    main{max-width:var(--maxw);margin:26px auto;padding:0 14px;}
+    .hero{background:var(--card);padding:22px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(10,20,15,0.06);display:flex;gap:18px;align-items:center}
+    .hero .left{flex:1}
+    .hero h2{margin:0 0 8px;font-size:22px;color:var(--dark)}
+    .hero p{margin:0;color:var(--muted)}
+    .btn{display:inline-block;background:var(--green);color:#fff;padding:9px 14px;border-radius:10px;text-decoration:none;margin-top:12px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 4px 12px rgba(10,20,15,0.04)}
+    h3{margin-top:0;color:var(--accent)}
+    footer{max-width:var(--maxw);margin:26px auto;padding:18px 14px;color:var(--muted);text-align:center}
+    @media(max-width:820px){.grid{grid-template-columns:1fr}.wrap{flex-direction:column;align-items:flex-start}.hero{flex-direction:column;align-items:flex-start}}
+    /* simple anchor link style */
+    .toc a{display:inline-block;margin-right:8px;color:var(--accent);text-decoration:none}
+    /* language sections */
+    .lang{display:none}
+    .lang.active{display:block}
+    .list{padding-left:18px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <h1 id="orgname">UNPECA</h1>
+        <p id="slogan">Humanité Généreuse et Bonne !</p>
+      </div>
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#domaines">Domaines</a>
+        <a href="#mission">Mission & Vision</a>
+        <a href="#activites">Activités</a>
+        <a href="#contact">Contact</a>
+        <button class="langbtn" onclick="setLang('fr')">FR</button>
+        <button class="langbtn" onclick="setLang('en')">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+      <div class="left">
+        <h2 class="lang fr active">Union pour la Promotion de l'Égalité des Chances, Aide et Action (UNPECA)</h2>
+        <h2 class="lang en">Union for the Promotion of Equal Opportunities, Aid, and Action (UNPECA)</h2>
+        <p class="lang fr active">Renforcer la paix, la cohésion sociale et l’inclusion au Mali par la mobilisation communautaire, l’éducation citoyenne, la santé et l’autonomisation des femmes et des jeunes.</p>
+        <p class="lang en">Strengthening peace, social cohesion and inclusion in Mali through community mobilization, civic education, health and empowerment of women and youth.</p>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+      <div class="right" style="min-width:220px">
+        <div style="background:#f0f7f3;padding:12px;border-radius:10px;text-align:center">
+          <strong>Fondée :</strong>
+          <div>29 Juin 2020</div>
+          <small class="muted">Formalisation : 03 Septembre 2021</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="apropos" style="margin-top:18px">
+      <div class="card lang fr active">
+        <h3>À propos de nous</h3>
+        <p><strong>Statut :</strong> Association – Récépissé N°0038/MATD-DGAT (03/09/2021) | Journal Officiel N°09 (21/03/2025) | Mairie N°388/MCRK (25/06/2025)</p>
+        <p><strong>Mission :</strong> Offrir des soutiens sociaux, économiques et humanitaires, avec des solutions adaptées et durables.</p>
+        <p><strong>Vision :</strong> Promouvoir l’égalité des chances pour un monde où chaque être humain vit dignement.</p>
+      </div>
+
+      <div class="card lang en">
+        <h3>About us</h3>
+        <p><strong>Status:</strong> Association – Receipt N°0038/MATD-DGAT (03/09/2021) | Official Journal N°09 (21/03/2025) | Municipality N°388/MCRK (25/06/2025)</p>
+        <p><strong>Mission:</strong> Provide social, economic and humanitarian support with adapted and sustainable solutions.</p>
+        <p><strong>Vision:</strong> Promote equal opportunities for a world where every human being lives with dignity.</p>
+      </div>
+    </section>
+
+    <!-- DOMAINES -->
+    <section id="domaines" style="margin-top:18px">
+      <div class="card">
+        <h3 class="lang fr active">Domaines d'intervention</h3>
+        <h3 class="lang en">Areas of intervention</h3>
+        <ul class="list lang fr active">
+          <li>Santé</li><li>Paix, cohésion et inclusion</li><li>Éducation & Formation</li><li>Sécurité alimentaire</li>
+          <li>Genre & Égalité</li><li>Environnement</li><li>Migration</li><li>Loisirs & Sports</li>
+          <li>Agriculture & Consommation</li><li>Citoyenneté</li><li>Emploi & Travail</li><li>Médias & Communication</li>
+          <li>Jeunes, Femmes, Enfants</li>
+        </ul>
+        <ul class="list lang en">
+          <li>Health</li><li>Peace, cohesion & inclusion</li><li>Education & Training</li><li>Food security</li>
+          <li>Gender & Equality</li><li>Environment</li><li>Migration</li><li>Leisure & Sports</li>
+          <li>Agriculture & Consumption</li><li>Citizenship</li><li>Employment & Work</li><li>Media & Communication</li>
+          <li>Youth, Women, Children</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section id="mission" style="margin-top:18px" class="grid">
+      <div class="card lang fr active">
+        <h3>Mission & Vision</h3>
+        <p><strong>Mission :</strong> Offrir des soutiens sociaux, économiques et humanitaires, avec des solutions adaptées et durables.</p>
+        <p><strong>Vision :</strong> Promouvoir l’égalité des chances pour un monde où chaque être humain vit dignement.</p>
+      </div>
+      <div class="card lang en">
+        <h3>Mission & Vision</h3>
+        <p><strong>Mission:</strong> Provide social, economic and humanitarian support with adapted and sustainable solutions.</p>
+        <p><strong>Vision:</strong> Promote equal opportunities for a world where every human being lives with dignity.</p>
+      </div>
+    </section>
+
+    <!-- ACTIVITES -->
+    <section id="activites" style="margin-top:18px">
+      <div class="card">
+        <h3 class="lang fr active">Activités et réalisations</h3>
+        <div class="lang fr active">
+          <h4>2021 – Diagnostic participatif et gouvernance locale</h4>
+          <ul class="list">
+            <li>Enquêtes participatives à Gouana, Diatoula, Kouralé (Commune rurale de Kalaban-Coro).</li>
+            <li>Projet « Rôles et responsabilités des acteurs locaux pour le vivre-ensemble » dans 4 communes du District de Bamako.</li>
+          </ul>
+
+          <h4>2022 – Engagement communautaire</h4>
+          <ul class="list">
+            <li>Organisation de campagnes de don de sang (Kalaban-Coro) en partenariat avec le CNTS – plus de 200 donneurs.</li>
+          </ul>
+
+          <h4>2023 – Mobilisation des jeunes pour la paix</h4>
+          <ul class="list">
+            <li>Suivi des dynamiques locales de cohésion sociale et appui aux jeunes leaders pour la tolérance et la citoyenneté active.</li>
+          </ul>
+
+          <h4>2024 – Santé communautaire</h4>
+          <ul class="list">
+            <li>Campagnes de consultations médicales gratuites et dons de médicaments – centaines de bénéficiaires.</li>
+          </ul>
+
+          <h4>2025 – Paix, cohésion et accompagnement social</h4>
+          <ul class="list">
+            <li>Hébergement et accompagnement de 25 déplacés internes depuis juin 2025.</li>
+            <li>Projet « Foot pour Grandir en Paix » à Kalaban-Coro.</li>
+            <li>Campagne « Voix de Paix » pour la Journée Internationale de la Paix.</li>
+          </ul>
+        </div>
+
+        <div class="lang en">
+          <h4>2021 – Participatory assessment & local governance</h4>
+          <ul class="list">
+            <li>Community surveys in Gouana, Diatoula, Kouralé (Kalaban-Coro rural commune).</li>
+            <li>Project on roles & responsibilities of local actors for social cohesion in 4 Bamako communes.</li>
+          </ul>
+          <h4>2022 – Community engagement</h4>
+          <ul class="list">
+            <li>Organized blood donation campaigns in partnership with CNTS – over 200 donors.</li>
+          </ul>
+          <h4>2023 – Youth mobilization for peace</h4>
+          <ul class="list">
+            <li>Follow-up on local cohesion dynamics and support to youth leaders for tolerance and active citizenship.</li>
+          </ul>
+          <h4>2024 – Community health</h4>
+          <ul class="list">
+            <li>Free medical consultations and medicine distribution – hundreds benefited.</li>
+          </ul>
+          <h4>2025 – Peace, cohesion & social support</h4>
+          <ul class="list">
+            <li>Hosting and support for 25 internally displaced persons since June 2025.</li>
+            <li>"Foot for Growing in Peace" sports-for-peace project in Kalaban-Coro.</li>
+            <li>"Voice of Peace" campaign for International Day of Peace.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM & CONTACT -->
+    <section id="contact" style="margin-top:18px" class="grid">
+      <div class="card">
+        <h3 class="lang fr active">Équipe / Direction</h3>
+        <p class="lang fr active"><strong>Directeur exécutif :</strong> Badra Aliou COULIBALY</p>
+        <p class="lang en"><strong>Executive Director:</strong> Badra Aliou COULIBALY</p>
+      </div>
+
+      <div class="card">
+        <h3 class="lang fr active">Contact</h3>
+        <p class="lang fr active"><strong>Siège :</strong> Kalaban-coro plateau, Rue 142, Porte 683 - Immeuble Tamba DOUMBIA - Bamako - République du Mali</p>
+        <p class="lang fr active"><strong>Téléphones :</strong> (+223) 76 36 90 55 • 64 77 85 52 • 79 64 52 18 • 50 50 19 69</p>
+        <p class="lang fr active"><strong>Email :</strong> <a href="mailto:unpecahumanitaire@gmail.com">unpecahumanitaire@gmail.com</a></p>
+        <p class="lang fr active"><strong>Facebook :</strong> <a href="https://www.facebook.com/share/1FVUcqLxtc/" target="_blank">UNPECA-Mali</a></p>
+
+        <p class="lang en"><strong>Office:</strong> Kalaban-coro plateau, Rue 142, Porte 683 - Immeuble Tamba DOUMBIA - Bamako - Mali</p>
+        <p class="lang en"><strong>Phones:</strong> (+223) 76 36 90 55 • 64 77 85 52 • 79 64 52 18 • 50 50 19 69</p>
+        <p class="lang en"><strong>Email:</strong> <a href="mailto:unpecahumanitaire@gmail.com">unpecahumanitaire@gmail.com</a></p>
+        <p class="lang en"><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1FVUcqLxtc/" target="_blank">UNPECA-Mali</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> UNPECA — Tous droits réservés. <br/>
+    <small class="muted">Association immatriculée – Récépissé N°0038/MATD-DGAT</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function setLang(code){
+      document.querySelectorAll('.lang').forEach(el=>el.classList.remove('active'));
+      document.querySelectorAll('.lang.'+code).forEach(el=>el.classList.add('active'));
+      // update header slogan and orgname if needed
+      if(code==='en'){
+        document.getElementById('orgname').textContent = 'UNPECA';
+        document.getElementById('slogan').textContent = 'Good and Generous Humanity !';
+      } else {
+        document.getElementById('orgname').textContent = 'UNPECA';
+        document.getElementById('slogan').textContent = 'Humanité Généreuse et Bonne !';
+      }
+    }
+    // default language FR
+    setLang('fr');
+  </script>
+</body>
+</html>
